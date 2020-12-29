@@ -1,16 +1,13 @@
-export const INCREMENT = 'counter/increment';
-export const DECREMENT = 'counter/decrement';
+import { INCREMENT, DECREMENT } from './types';
 
-export const increment = () => {
-  type: INCREMENT,
-  payload: 0
-}
+export const increment = () => ({
+  type: INCREMENT
+})
 
-export const decrement = () => {
-  type: DECREMENT,
-  payload: 0
-}
+export const decrement = () => ({
+  type: DECREMENT
+})
 
-const initialState = {
+export const initialState = {
   number: 0
 }
